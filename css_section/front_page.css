@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins','Times New Roman', sans-serif;
+
+}
+body{
+    height:100vh;
+    width:100vw;
+    color:white;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+
+/* 
+    |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ */
+
+.container{
+    height:100px;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(95, 181, 227);
+}
+.logo{
+    flex:0.5;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+.logo_image{
+    height:60px;
+    width:60px;
+    margin-left:5px;
+    border:2px solid white;
+    border-radius:50%;
+    background-image:url("../images/logo.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.logo_text{
+    font-size:30px;
+    color:white;
+}
+.content_section{
+    flex:1.1;
+}
+div.content_section a{
+    margin:0px 35px;
+    font-size:20px;
+}
+.sign_section{
+    flex:0.3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+div.sign_section button{
+    height:40px;
+    width:100px;
+    color:white;
+    background-color:rgba(43, 207, 73, 0.301);
+    font-size:20px;
+    border-radius:15%;
+}
+
+/* 
+    |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ */
+
+.main_area{
+    height:400px;
+    width:100%;
+    background-color:rgb(36, 189, 192);
+}
+.s_main_area1,.s_main_area2{
+    height:450px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:cadetblue;
+    padding: 0 20px 0 20px;
+    gap:20px;
+}
+/* div.first_area div{
+      margin:0 30px 0 30px;
+} */
+.left_box{
+    flex:0.5;
+    height:400px;
+    width:90%;
+    border:2px solid red;
+    background-color:rgba(114, 172, 238, 0.947);
+    border-radius:5%;
+    box-shadow:0 0 12px rgba(224, 57, 227, 0.8),  
+               0 0 25px rgba(0, 242, 254, 0.6),   
+               0 0 45px rgba(138, 43, 226, 0.4);  
+}
+.right_box{
+    flex:0.5;
+    height:400px;
+    width:90%;
+    border:2px solid red;
+    background-color:rgba(114, 172, 238, 0.947);
+    border-radius:5%;
+    box-shadow:0 0 12px rgba(224, 57, 227, 0.8),  
+               0 0 25px rgba(0, 242, 254, 0.6),   
+               0 0 45px rgba(138, 43, 226, 0.4);  
+}
