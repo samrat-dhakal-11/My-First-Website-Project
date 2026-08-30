@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMRATTTT — The Autonomous Student OS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css_section/landing_page.css">
+<base target="_blank">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="nav-brand">
+            <img src="../images/logo.png" alt="SAMRATTTT Logo">
+            <span>SAMRATTTT</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#productivity">Productivity</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#finance">Finance</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#" class="btn-login" onclick="openLoginModal(event)">LOGIN</a></li>
+        </ul>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="shape-3"></div>
+
+        <div class="hero-content">
+            <div class="badge">
+                <span class="sparkle">✨</span>
+                <span>AI-Powered</span>
+                <span class="dot">●</span>
+                <span>Multi-Agent</span>
+                <span class="dot">●</span>
+                <span>Built for Students</span>
+            </div>
+
+            <h1>
+                The Autonomous<br>
+                <span class="highlight">Student OS</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Your Multi-Agent Command Center for Academic Success
+            </p>
+
+            <button class="btn-primary" onclick="openLoginModal(event)">
+                Get Started Free
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Feature Cards -->
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card" onclick="openLoginModal(event)">
+                <div class="feature-icon icon-productivity">
+                    <i class="fas fa-folder-open"></i>
+                </div>
+                <h3>Productivity Agent</h3>
+                <p>Plan, focus, and achieve more with AI-powered productivity.</p>
+                <span class="feature-link">
+                    Explore <i class="fas fa-arrow-right"></i>
+                </span>
+            </div>
+
+            <div class="feature-card" onclick="openLoginModal(event)">
+                <div class="feature-icon icon-academic">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Academic Optimizer</h3>
+                <p>Smart study plans, resources, and insights for top performance.</p>
+                <span class="feature-link">
+                    Explore <i class="fas fa-arrow-right"></i>
+                </span>
+            </div>
+
+            <div class="feature-card" onclick="openLoginModal(event)">
+                <div class="feature-icon icon-finance">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h3>Finance Manager</h3>
+                <p>Track expenses, budget smartly, and build your financial future.</p>
+                <span class="feature-link">
+                    Explore <i class="fas fa-arrow-right"></i>
+                </span>
+            </div>
+
+            <div class="feature-card" onclick="openLoginModal(event)">
+                <div class="feature-icon icon-career">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Career Hub</h3>
+                <p>Discover opportunities, build skills, and launch your dream career.</p>
+                <span class="feature-link">
+                    Explore <i class="fas fa-arrow-right"></i>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Footer -->
+    <footer class="trust-footer">
+        <div class="trust-content">
+            <div class="trust-avatars">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Student 1">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Student 2">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&h=100&fit=crop&crop=face" alt="Student 3">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=face" alt="Student 4">
+            </div>
+            <div class="trust-text">
+                <p><strong>Trusted by thousands of students</strong><br>to simplify life and maximize potential.</p>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9/5 from 2,000+ users</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal-overlay" id="loginModal" onclick="closeLoginModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <h3>Welcome to SAMRATTTT</h3>
+            <p>Sign in to access your personalized Student OS dashboard and all AI-powered agents.</p>
+            <div class="modal-actions">
+                <button class="modal-btn modal-btn-primary" onclick="redirectToLogin()">
+                    Sign In
+                </button>
+                <button class="modal-btn modal-btn-secondary" onclick="closeLoginModal()">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js_section/landing_page.js"></script>
+</body>
+</html>
