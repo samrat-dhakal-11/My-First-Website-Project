@@ -68,14 +68,14 @@ registerForm.addEventListener('submit', function (e) {
     // (Replace setTimeout with fetch() to your Python backend when ready)
     setTimeout(() => {
         alert('Account created successfully! Redirecting to login...');
-        window.location.href = 'login_page.html';
+        window.location.href = '../html_section/login_page.html';
     }, 1000);
 });
 
 // ─── Sign In Link → Redirect to Login Page ───
 document.getElementById('loginLink').addEventListener('click', function (e) {
     e.preventDefault();
-    window.location.href = 'login_page.html';
+    window.location.href = '../html_section/login_page.html';
 });
 
 // ─── Input Focus Effects ───
