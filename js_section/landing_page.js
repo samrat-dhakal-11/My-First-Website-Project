@@ -25,7 +25,7 @@ function closeLoginModal(event) {
 }
 
 function redirectToLogin() {
-    window.location.href = "/html_section/login_page.html";
+    window.location.href = "../html_section/login_page.html";
 }
 
 // Close modal on Escape key
