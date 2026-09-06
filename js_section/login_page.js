@@ -52,12 +52,12 @@ loginForm.addEventListener('submit', function (e) {
     // Simulate a brief delay then redirect
     // (Replace this with actual fetch() to your Python backend when ready)
     setTimeout(() => {
-        window.location.href = 'front_page.html';
+        window.location.href = '/html_section/front_page.html';
     }, 800);
 });
 document.getElementById('registerLink').addEventListener('click', function (e) {
     e.preventDefault();
-    window.location.href = 'register_page.html';
+    window.location.href = '/html_section/register_page.html';
 });
 
 // ─── Social Login → OAuth Redirects ───
